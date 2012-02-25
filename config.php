@@ -36,3 +36,6 @@ define('CACHE', TRUE);
 
 // if so, where will the cache files be stored? (include trailing slash)
 define('CACHE_DIR', dirname(__FILE__) . '/cache/');
+
+// if so, where will the cache files be stored? (include trailing slash)
+define('SHOW_RECENT', FALSE);
