@@ -51,6 +51,7 @@ if(!empty($url_to_shorten) && preg_match('|^https?://|', $url_to_shorten))
 	echo BASE_HREF . $shortened_url;
 }
 
+//pass in the id from the shortenedurls table, returns the code that gets added to the base URL
 function getShortenedURLFromID ($integer, $base = ALLOWED_CHARS)
 {
 	$length = strlen($base);
