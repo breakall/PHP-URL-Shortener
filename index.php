@@ -3,14 +3,14 @@
 <title>URL shortener</title>
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body onload="loadRecentLinks()">
+<body <?php if(SHOW_RECENT){echo 'onload="loadRecentLinks()"';}?>>
 	
 <h1><?php echo $_SERVER['HTTP_HOST'];?></h1>
 	
 <form method="post" action="shorten.php" id="shortener">
 <label for="longurl">URL to shorten</label> <input type="text" name="longurl" id="longurl"> <input type="submit" value="Shorten">
 </form>
-</form>
+
 
 
 
@@ -62,7 +62,7 @@ $(function () {
 <script type="text/javascript">
 function loadRecentLinks()
 {
-	$.getJSON("recentlinks.php", 
+	$.getJSON("getrecentlinksJSON.php", 
 		function(data)
 		{
 			$.each(data, function(index) 

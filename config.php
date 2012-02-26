@@ -5,12 +5,7 @@
  * Contact the author at http://briancray.com/
  */
 
-// db options
-define('DB_NAME', 'your db name');
-define('DB_USER', 'your db usernae');
-define('DB_PASSWORD', 'your db password');
-define('DB_HOST', 'localhost');
-define('DB_TABLE', 'shortenedurls');
+require('db_config.php');
 
 // connect to database
 mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
@@ -23,7 +18,7 @@ define('BASE_HREF', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 define('LIMIT_TO_IP', $_SERVER['REMOTE_ADDR']);
 
 // change to TRUE to start tracking referrals
-define('TRACK', FALSE);
+define('TRACK', TRUE);
 
 // check if URL exists first
 define('CHECK_URL', FALSE);
@@ -37,5 +32,5 @@ define('CACHE', TRUE);
 // if so, where will the cache files be stored? (include trailing slash)
 define('CACHE_DIR', dirname(__FILE__) . '/cache/');
 
-// if so, where will the cache files be stored? (include trailing slash)
-define('SHOW_RECENT', FALSE);
+// change to TRUE if you want to show recent links on the main page
+define('SHOW_RECENT', TRUE);
