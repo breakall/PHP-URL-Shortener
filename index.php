@@ -3,6 +3,17 @@
 <head>
 <title>URL shortener</title>
 <meta name="robots" content="noindex, nofollow">
+<style type="text/css">
+	div.recentlinks_url 
+	{
+		float: left;
+		display: inline-block; 
+		overflow: hidden; 
+		white-space: nowrap; 
+		width: 600px; 
+		text-overflow: ellipsis;
+	}
+</style>
 </head>
 <body>
 	
