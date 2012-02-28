@@ -51,8 +51,8 @@ $(function () {
 </script>
 
 
-<a id="newurl"></a>
-<div id="origurl"></div>
+<div style="float:left; margin: 10px;"><a id="newurl"></a></div>
+<div style="margin: 10px;" id="origurl"></div>
 
 
 <?php if(SHOW_RECENT)

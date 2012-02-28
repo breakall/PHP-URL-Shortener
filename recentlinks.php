@@ -1,4 +1,4 @@
-<h2>Recently shortened URLs</h2>
+<br><h2>Recently shortened URLs</h2>
 
 <div id="recent_links_container"></div>
 
@@ -7,6 +7,7 @@ loadRecentLinksDiv();
 
 function loadRecentLinksDiv()
 {
+	$('#recent_links_container').append('<div class="recentlinks_url">Original URL</div><div>Hits</div>');
 	$.getJSON("getrecentlinksJSON.php", 
 	function(data)
 	{
