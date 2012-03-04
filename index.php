@@ -1,6 +1,7 @@
 <?php require('config.php');?>
 <!DOCTYPE html>
 <head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <title>URL shortener</title>
 <meta name="robots" content="noindex, nofollow">
 <style type="text/css">
@@ -26,7 +27,8 @@
 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <script type="text/javascript">
 $(function() 
 {
@@ -50,13 +52,17 @@ $(function () {
 });
 </script>
 
+<br />
+<br />
+Shortened URL: <a id="newurl"></a><br /><br />
 
-<div style="float:left; margin: 10px;"><a id="newurl"></a></div>
-<div style="margin: 10px;" id="origurl"></div>
+Original URL: <div id="origurl"></div>
+<br />
+<br />
 
 
-<?php if(SHOW_RECENT)
-	require('recentlinks.php');?>
+<?php if(SHOW_RECENT_AND_TOP)
+	require('recent_and_top_links.php');?>
 
 </body>
 </html>

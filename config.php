@@ -32,5 +32,5 @@ define('CACHE', TRUE);
 // if so, where will the cache files be stored? (include trailing slash)
 define('CACHE_DIR', dirname(__FILE__) . '/cache/');
 
-// change to TRUE if you want to show recent links on the main page
-define('SHOW_RECENT', TRUE);
+// change to TRUE if you want to show recent and top links on the main page
+define('SHOW_RECENT_AND_TOP', TRUE);
