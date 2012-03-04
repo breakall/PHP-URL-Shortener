@@ -1,4 +1,4 @@
-
+<!-- jquery tabs -->
 <div id="tabs">
 	<ul>
 		<li><a href="#recent_links_container"><span>Recent Links</span></a></li>
